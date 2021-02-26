@@ -40,45 +40,46 @@ namespace AnalizadorSintactico
             {
                 label2.ForeColor = Color.Green;
                 label2.Text = "Validacion: Correcta";
-            }
-            else
-                label2.Text = "Validacion: Incorrecta";
 
-            lexToken.Clear();
+                lexToken.Clear();
 
-            List<char> elementos = txtFuncion.Text.Replace(" ", "").ToCharArray().ToList();
-            
-            if (elementos.Count > 0)
-            {
-                DataRow fila;
+                List<char> elementos = txtFuncion.Text.Replace(" ", "").ToCharArray().ToList();
 
-                foreach (char elemento in elementos)
+                if (elementos.Count > 0)
                 {
-                    fila = lexToken.NewRow();
+                    DataRow fila;
 
-                    if (num.Contains(elemento))
+                    foreach (char elemento in elementos)
                     {
-                        fila["Elemento"] = elemento;
-                        fila["Tipo"] = "Numerico";
-                    }
-                    else if (ope.Contains(elemento))
-                    {
-                        fila["Elemento"] = elemento;
-                        fila["Tipo"] = "Operador";
-                    }
-                    else if (delim.Contains(elemento))
-                    {
-                        fila["Elemento"] = elemento;
-                        fila["Tipo"] = "Delimitador";
-                    }
+                        fila = lexToken.NewRow();
 
-                    lexToken.Rows.Add(fila);
+                        if (num.Contains(elemento))
+                        {
+                            fila["Elemento"] = elemento;
+                            fila["Tipo"] = "Numerico";
+                        }
+                        else if (ope.Contains(elemento))
+                        {
+                            fila["Elemento"] = elemento;
+                            fila["Tipo"] = "Operador";
+                        }
+                        else if (delim.Contains(elemento))
+                        {
+                            fila["Elemento"] = elemento;
+                            fila["Tipo"] = "Delimitador";
+                        }
+
+                        lexToken.Rows.Add(fila);
+                    }
+                    dgvSalida.DataSource = lexToken;
+                    dgvSalida.Refresh();
                 }
-                dgvSalida.DataSource = lexToken;
-                dgvSalida.Refresh();
+            
             }
             else
             {
+                label2.ForeColor = Color.Red;
+                label2.Text = "Validacion: Incorrecta";
                 dgvSalida.DataSource = null;
                 dgvSalida.Refresh();
             }
@@ -99,6 +100,9 @@ namespace AnalizadorSintactico
 
         private Boolean funcionBienEscrita(String funcion)
         {
+
+            //Regex regEX = new Regex(@"(?<=[d)])(?=[a-df-z(])|(?<=pi)(?=[^+-*/\^!)])|(?<=))(?=d)|(?<=[^/*+-])(?=exp)", RegexOptions.IgnoreCase);
+            
             String expresion;
             expresion = "[0-9()|]{1,}(?: {0,}[+\\-\\*\\/] {0,}[0-9()|]{1,}){0,}$";
 
