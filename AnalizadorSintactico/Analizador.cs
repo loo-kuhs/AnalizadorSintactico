@@ -42,7 +42,6 @@ namespace AnalizadorSintactico
             {
                 label2.ForeColor = Color.Green;
                 label2.Text = "Validacion: Correcta";
-
                 lexToken.Clear();
 
                 List<char> elementos = txtFuncion.Text.Replace(" ", "").ToCharArray().ToList();

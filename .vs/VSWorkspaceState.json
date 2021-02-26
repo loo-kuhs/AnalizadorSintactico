@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\AnalizadorSintactico"
   ],
+  "SelectedNode": "\\AnalizadorSintactico.sln",
   "PreviewInSolutionExplorer": false
 }
