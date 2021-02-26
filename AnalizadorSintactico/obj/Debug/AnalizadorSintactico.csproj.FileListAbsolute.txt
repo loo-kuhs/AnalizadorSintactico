@@ -1,0 +1,10 @@
+C:\Users\rukaz\Source\Repos\tGraffe\AnalizadorSintactico\AnalizadorSintactico\bin\Debug\AnalizadorSintactico.exe.config
+C:\Users\rukaz\Source\Repos\tGraffe\AnalizadorSintactico\AnalizadorSintactico\bin\Debug\AnalizadorSintactico.exe
+C:\Users\rukaz\Source\Repos\tGraffe\AnalizadorSintactico\AnalizadorSintactico\bin\Debug\AnalizadorSintactico.pdb
+C:\Users\rukaz\Source\Repos\tGraffe\AnalizadorSintactico\AnalizadorSintactico\obj\Debug\AnalizadorSintactico.csprojAssemblyReference.cache
+C:\Users\rukaz\Source\Repos\tGraffe\AnalizadorSintactico\AnalizadorSintactico\obj\Debug\AnalizadorSintactico.Analizador.resources
+C:\Users\rukaz\Source\Repos\tGraffe\AnalizadorSintactico\AnalizadorSintactico\obj\Debug\AnalizadorSintactico.Properties.Resources.resources
+C:\Users\rukaz\Source\Repos\tGraffe\AnalizadorSintactico\AnalizadorSintactico\obj\Debug\AnalizadorSintactico.csproj.GenerateResource.cache
+C:\Users\rukaz\Source\Repos\tGraffe\AnalizadorSintactico\AnalizadorSintactico\obj\Debug\AnalizadorSintactico.csproj.CoreCompileInputs.cache
+C:\Users\rukaz\Source\Repos\tGraffe\AnalizadorSintactico\AnalizadorSintactico\obj\Debug\AnalizadorSintactico.exe
+C:\Users\rukaz\Source\Repos\tGraffe\AnalizadorSintactico\AnalizadorSintactico\obj\Debug\AnalizadorSintactico.pdb
