@@ -87,12 +87,11 @@ namespace AnalizadorSintactico
 
         private void txtFuncion_KeyPress(object sender, KeyPressEventArgs e)
         {
-
-           if (Char.IsSeparator(e.KeyChar))
+            if (Char.IsSeparator(e.KeyChar))
             {
                 e.Handled = true;
             }
-           else if (Char.IsLetter(e.KeyChar))
+            else if (Char.IsLetter(e.KeyChar))
             {
                 e.Handled = true;
             }
