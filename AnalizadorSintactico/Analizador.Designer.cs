@@ -133,7 +133,7 @@ namespace AnalizadorSintactico
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Analizador";
-            this.Text = "Analizador Sintáctico - Compiladores e Intérpretes";
+            this.Text = "Analizador Léxico - Sintáctico";
             this.Load += new System.EventHandler(this.Analizador_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -30,6 +30,8 @@ namespace AnalizadorSintactico
 
         private void Analizador_Load(object sender, EventArgs e)
         {
+            this.Top = (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2;
+            this.Left = (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2;
             lexToken.Columns.Add("Elemento", typeof(char));
             lexToken.Columns.Add("Tipo", typeof(string));
         }
