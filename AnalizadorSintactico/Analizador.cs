@@ -101,9 +101,6 @@ namespace AnalizadorSintactico
 
         private Boolean funcionBienEscrita(String funcion)
         {
-
-            //Regex regEX = new Regex(@"(?<=[d)])(?=[a-df-z(])|(?<=pi)(?=[^+-*/\^!)])|(?<=))(?=d)|(?<=[^/*+-])(?=exp)", RegexOptions.IgnoreCase);
-            
             String expresion;
             expresion = "[0-9()|]{1,}(?: {0,}[+\\-\\*\\/] {0,}[0-9()|]{1,}){0,}$";
 
